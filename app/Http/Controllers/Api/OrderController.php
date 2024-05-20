@@ -58,4 +58,6 @@ class OrderController extends Controller
             'data' => $order
         ], 200);
     }
+
+    //index
 }

@@ -40,3 +40,9 @@ Route::get('/api-discounts', [App\Http\Controllers\Api\DiscountController::class
 
 //discounts api
 Route::post('/api-discounts', [App\Http\Controllers\Api\DiscountController::class, 'store'])->middleware('auth:sanctum');
+
+//discounts api
+Route::put('/api-discounts/{discount}', [App\Http\Controllers\Api\DiscountController::class, 'update']);
+
+//discounts api
+Route::delete('/api-discounts/{discount}', [App\Http\Controllers\Api\DiscountController::class, 'destroy']);
